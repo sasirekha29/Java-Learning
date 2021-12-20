@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*class Task1 extends Thread
+class Task1 extends Thread
 {
 	public void run()
 	{
@@ -18,7 +18,7 @@ import java.util.Scanner;
 			System.out.println("Error!!");
 		}
 		}
-}*/
+}
 class Task2 extends Thread
 {
 	public void run()
@@ -61,10 +61,10 @@ public class MultiThread
 {
     public static void main(String[] args) {
     	
-//	Task1 t1=new Task1();
+    Task1 t1=new Task1();
 	Task2 t2=new Task2();
 	Task3 t3=new Task3();
-	//t1.start();
+	t1.start();
 	t2.start();
 	t3.start();
 	
