@@ -35,12 +35,12 @@
 </tr>
 </table>
 <table>
-<tr><td>Student's Address</td></tr>
+<tr><td>Student's Address hello</td></tr>
 <tr>
-<td>Country: <input type="text" name="Country"/></td>
-<td>City: <input type="text" name="City"/></td>
-<td>Street: <input type="text" name="Street"/></td>
-<td>PinCode: <input type="text" name="pincode"/></td>
+<td>Country: <input type="text" name="Studentaddress.Country"/></td>
+<td>City: <input type="text" name="Studentaddress.City"/></td>
+<td>Street: <input type="text" name="Studentaddress.Street"/></td>
+<td>PinCode: <input type="text" name="Studentaddress.pincode"/></td>
 </tr>
 </table>
 <td> <input type="submit" value="submit the form"> </td>

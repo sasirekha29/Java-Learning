@@ -17,7 +17,7 @@ public class StudentAdmissionController {
 	@RequestMapping(value="/admission.html", method=RequestMethod.GET)
 	public ModelAndView getAdmissionForm()
 	{
-		ModelAndView model=new ModelAndView("AdmissionForm");
+		ModelAndView model=new ModelAndView("AdmissionForm","command",new Student());
 		return model;
 	}
 	
@@ -27,14 +27,14 @@ public class StudentAdmissionController {
 		model1.addAttribute("message","Engineering courses Details!!");
 	}
 	@RequestMapping(value="/submission.html", method=RequestMethod.POST)
-	public ModelAndView submitAdmissionForm(@ModelAttribute("student1") Student student1, @ModelAttribute("address1") Address address1,BindingResult result)
+	public ModelAndView submitAdmissionForm(@ModelAttribute("student1") Student student1,BindingResult result)
 	{
 		if(result.hasErrors())
 		{
 			ModelAndView model=new ModelAndView("AdmissionForm");
 			return model;
 		}
-	student1.setAddress(address1);
+	//student1.setAddress(address1);
 		ModelAndView model=new ModelAndView("SubmissionForm");
 		return model;
 	}

@@ -9,12 +9,12 @@ private String StudentID;
 private Long StudentMobile;
 private Date DOB;
 private ArrayList<String> StudentSkills; 
-public Address Studentaddress;
-public Address getAddress() {
+private Address Studentaddress;
+public Address getStudentaddress() {
 	return Studentaddress;
 }
-public void setAddress(Address address) {
-	this.Studentaddress = address;
+public void setStudentaddress(Address studentaddress) {
+	Studentaddress = studentaddress;
 }
 public Long getStudentMobile() {
 	return StudentMobile;

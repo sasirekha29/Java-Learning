@@ -37,10 +37,10 @@
 </tr>
 <tr>
 <td>Student's Address :</td>
-<td>Country:	${student1.getAddress().getCountry()}
-	Street:		${student1.getAddress().getStreet()}
-	City:		${student1.getAddress().getCity()}
-	PinCode:	${student1.getAddress().getPincode()}</td>
+<td>Country:	${student1.getStudentaddress().getCountry()}
+	Street:		${student1.getStudentaddress().getStreet()}
+	City:		${student1.getStudentaddress().getCity()}
+	PinCode:	${student1.getStudentaddress().getPincode()}</td>
 </tr>
 </table>
 </p>
