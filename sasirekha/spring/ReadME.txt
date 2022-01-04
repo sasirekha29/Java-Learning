@@ -25,7 +25,7 @@ Beans are created with the meta configuration data provided. The following metad
 		1. Naming the bean : <bean id ="bean1" class=...></bean> or <bean name="client,client2" class=..></bean>
 id-> for representing unique name to the bean. If more than one name to the bean has to be given name attribute can be used. However if name or id are not provided ,
 spring creates a name on its own.
-		2.  Instatiating the bean
+		2.  Instantiating the bean
 ## Dependency injection
 There are two types of dependency injection: 
 1. constructor based injection 2. setter based injection
@@ -36,6 +36,15 @@ XML configuration for setter-> Here we use <property> tag to inject in the sette
 
 In the case of annotation based. we have the following annotation which is important
 1. @autowire - two types: by type and by value
-2. @component 
-3. @primary
+2. @component - to declare the bean as component 
+3. @primary - by default inject this object
+4. @Qualifier- To specify which bean has to be injected, if two or more component is present
+
+In the java configuration, @Bean @configuration is used
+@Bean is method level- to specify which bean. It also supports init method and destroy method which is usefull in the life cycle events.
+Bean scope : 1. Singleton (default) single bean definition is done to a single object per spring IOC container
+2. Prototype - single bean definition to any number of object instances
+3. Request, session, application and websocker are used for web application specific.
+
+The folder in this repo contains two folders :1. constructor based 2. Setter based with each sub based on the type of configuration.
 
